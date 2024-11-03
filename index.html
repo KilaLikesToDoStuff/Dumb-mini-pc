@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini PC Emulator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="desktop">
+        <div id="taskbar">
+            <span onclick="toggleWindow('file-explorer')">File Explorer</span>
+            <span onclick="toggleWindow('web-browser')">Web Browser</span>
+        </div>
+        <div id="file-explorer" class="window">
+            <h2>File Explorer</h2>
+            <ul id="file-list"></ul>
+            <input type="text" id="new-file-name" placeholder="New file name">
+            <button onclick="createFile()">Create File</button>
+        </div>
+        <div id="text-editor" class="window" style="display: none;">
+            <h2>Text Editor</h2>
+            <textarea id="editor" rows="10" cols="30"></textarea>
+            <button onclick="saveFile()">Save</button>
+        </div>
+        <div id="web-browser" class="window" style="display: none;">
+            <h2>Web Browser</h2>
+            <input type="text" id="search-query" placeholder="Search Google">
+            <button onclick="searchGoogle()">Search</button>
+            <div id="search-results"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
