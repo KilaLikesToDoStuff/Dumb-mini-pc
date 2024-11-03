@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.desktop {
+    width: 100vw;
+    height: 100vh;
+    background-color: #87CEEB;
+    position: relative;
+}
+
+#taskbar {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: left;
+}
+
+.window {
+    border: 1px solid #000;
+    background-color: #FFF;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    width: 300px;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    padding: 10px;
+}
+
+h2 {
+    margin: 0;
+}
+
+textarea {
+    width: 100%;
+}
